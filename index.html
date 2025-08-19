@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronob Roy | UI/UX Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Dark mode toggle script
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-10 transition-colors duration-500">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Pronob Roy</h1>
+      <nav class="flex items-center space-x-4">
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-600 dark:hover:text-yellow-400 transition">About</a></li>
+          <li><a href="#portfolio" class="hover:text-blue-600 dark:hover:text-yellow-400 transition">Portfolio</a></li>
+          <li><a href="#resume" class="hover:text-blue-600 dark:hover:text-yellow-400 transition">Resume</a></li>
+          <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-yellow-400 transition">Contact</a></li>
+        </ul>
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 dark:bg-gray-700 text-center py-24 px-4 mt-14 transition-colors duration-500">
+    <h2 class="text-3xl md:text-5xl font-bold">Hi, I’m Pronob Kumar Roy 👋</h2>
+    <p class="text-lg md:text-xl mt-4">A UI/UX Designer & CST Student from Bangladesh</p>
+    <p class="italic mt-3">“I design modern, user-friendly digital experiences that make life easier.”</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto py-16 px-6">
+    <h3 class="text-2xl font-bold mb-6">About Me</h3>
+    <p class="mb-4">
+      I’m currently studying <b>Computer Science & Technology (CST)</b> at <b>Rangpur Ideal Institute of Technology</b>.
+    </p>
+    <p class="mb-4">
+      My passion is creating <b>simple, accessible, and engaging user interfaces</b>. 
+      I believe every design should tell a story and solve a real problem.
+    </p>
+
+    <h4 class="text-xl font-semibold mb-3">Skills:</h4>
+    <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <li>🎨 Figma</li>
+      <li>📱 Adobe XD</li>
+      <li>💻 HTML, CSS, Bootstrap</li>
+      <li>🧩 Wireframing & Prototyping</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="bg-gray-50 dark:bg-gray-800 py-16 px-6 transition-colors duration-500">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-bold mb-8">Portfolio</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md transition hover:scale-105 duration-300">
+          <h4 class="text-lg font-semibold">📱 Mobile Shopping App</h4>
+          <p class="mt-2">A clean & seamless UI/UX design for online shopping. Includes product listing, cart, and checkout flow.</p>
+          <a href="#" class="text-blue-600 dark:text-yellow-400 mt-3 inline-block">🔗 View Case Study</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md transition hover:scale-105 duration-300">
+          <h4 class="text-lg font-semibold">🎓 Student Dashboard</h4>
+          <p class="mt-2">A dashboard concept for students to manage classes, assignments, and results. Focused on usability & minimal UI.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md transition hover:scale-105 duration-300">
+          <h4 class="text-lg font-semibold">📝 Personal Blog Design</h4>
+          <p class="mt-2">A responsive blog layout with light/dark mode toggle. Designed to enhance reading experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="container mx-auto py-16 px-6">
+    <h3 class="text-2xl font-bold mb-6">Resume / Experience</h3>
+
+    <h4 class="text-xl font-semibold mb-3">Education:</h4>
+    <p>🎓 Diploma in Computer Science & Technology (Rangpur Ideal Institute of Technology)</p>
+
+    <h4 class="text-xl font-semibold mt-6 mb-3">Experience:</h4>
+    <ul class="list-disc pl-6">
+      <li>Freelance UI/UX Design Projects</li>
+      <li>Personal projects & prototypes</li>
+    </ul>
+
+    <a href="#" class="mt-6 inline-block bg-blue-600 dark:bg-yellow-500 text-white dark:text-gray-900 px-4 py-2 rounded-lg shadow-md hover:scale-105 transition">📂 Download Resume PDF</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-blue-50 dark:bg-gray-700 py-16 px-6 text-center transition-colors duration-500">
+    <h3 class="text-2xl font-bold mb-6">Contact</h3>
+    <p>💌 <b>Email:</b> pronobroy@email.com</p>
+    <p>📞 <b>Phone:</b> +8801835893144</p>
+    <p class="mt-4">
+      🔗 <a href="#" class="text-blue-600 dark:text-yellow-400">LinkedIn</a> | 
+      <a href="#" class="text-blue-600 dark:text-yellow-400">Dribbble</a> | 
+      <a href="#" class="text-blue-600 dark:text-yellow-400">Behance</a> | 
+      <a href="#" class="text-blue-600 dark:text-yellow-400">GitHub</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 dark:bg-black text-white text-center py-4 transition-colors duration-500">
+    <p>© 2025 Pronob Roy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+        themeToggle.textContent = "☀️";
+      } else {
+        localStorage.theme = 'light';
+        themeToggle.textContent = "🌙";
+      }
+    });
+  </script>
+</body>
+</html>
